@@ -1,0 +1,785 @@
+{% extends 'base.html' %}
+
+{% block title %}{% endblock title %}
+
+{% block body %}
+
+
+<div class="container  my-4">
+  <p>
+
+      <button class="btn btn-dark col-12" type="button" data-bs-toggle="collapse" data-bs-target="#aids" aria-expanded="false" aria-controls="aids">
+          AIDS Y20
+        </button>
+
+
+  </p>
+
+  <div class="collapse gap-2 col-12 " id="aids">
+      <div class="card card-body">
+
+
+
+          <form action='/output' method='post'>{% csrf_token %}
+
+
+
+    <div class="col-md-6">
+            <label for="curgpa" class="form-label">Enter the current gpa</label>
+            <input type="name" class="form-control" name="curgpa" id="curgpa">
+    </div>
+
+    <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the DL expected gpa</label>
+            <input type="name" class="form-control" name="dl" id="dl">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the ATCD expected gpa</label>
+            <input type="name" class="form-control" name="atcd" id="atcd">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the CC expected gpa</label>
+            <input type="name" class="form-control" name="cc" id="cc">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the FC1 expected gpa</label>
+            <input type="name" class="form-control" name="bda" id="bda">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the PE1 expected gpa</label>
+            <input type="name" class="form-control" name="sp" id="sp">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the PFSD expected gpa</label>
+            <input type="name" class="form-control" name="pfsd" id="pfsd">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the MCP expected gpa</label>
+            <input type="name" class="form-control" name="mcp" id="mcp">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the AB expected gpa</label>
+            <input type="name" class="form-control" name="ab" id="ab">
+    </div>
+
+
+<button type="submit" class="btn btn-dark mt-2">Get CGPA</button>
+    </form>
+
+
+      </div>
+  </div>
+
+</div>
+
+
+<div class="container  my-4">
+  <p>
+
+      <button class="btn btn-dark col-12" type="button" data-bs-toggle="collapse" data-bs-target="#aids21h" aria-expanded="false" aria-controls="aids21h">
+          AIDS HONS Y21
+        </button>
+
+
+  </p>
+
+  <div class="collapse gap-2 col-12 " id="aids21h">
+      <div class="card card-body">
+
+
+
+          <form action='/outai21' method='post'>{% csrf_token %}
+
+
+
+    <div class="col-md-6">
+            <label for="curgpa" class="form-label">Enter the current gpa</label>
+            <input type="name" class="form-control" name="curgpa" id="curgpa">
+    </div>
+
+    <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the P&S expected gpa</label>
+            <input type="name" class="form-control" name="pns" id="pns">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the DAA expected gpa</label>
+            <input type="name" class="form-control" name="daa" id="daa">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the JAVA expected gpa</label>
+            <input type="name" class="form-control" name="java" id="java">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the OS expected gpa</label>
+            <input type="name" class="form-control" name="os" id="os">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the DM expected gpa</label>
+            <input type="name" class="form-control" name="dm" id="dm">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the SE expected gpa</label>
+            <input type="name" class="form-control" name="se" id="se">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the AI expected gpa</label>
+            <input type="name" class="form-control" name="ai" id="ai">
+    </div>
+
+    <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the PBL expected gpa</label>
+            <input type="name" class="form-control" name="pbl" id="pbl">
+    </div>
+
+<div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the ESS expected gpa</label>
+            <input type="name" class="form-control" name="ess" id="ess">
+    </div>
+
+<button type="submit" class="btn btn-dark mt-2">Get CGPA</button>
+    </form>
+
+      </div>
+  </div>
+
+</div>
+
+
+<div class="container  my-4">
+  <p>
+
+      <button class="btn btn-dark col-12" type="button" data-bs-toggle="collapse" data-bs-target="#aids21r" aria-expanded="false" aria-controls="aids21r">
+          AIDS REG Y21
+        </button>
+
+
+  </p>
+
+  <div class="collapse gap-2 col-12 " id="aids21r">
+      <div class="card card-body">
+
+
+
+          <form action='/outair21' method='post'>{% csrf_token %}
+
+
+
+    <div class="col-md-6">
+            <label for="curgpa" class="form-label">Enter the current gpa</label>
+            <input type="name" class="form-control" name="curgpa" id="curgpa">
+    </div>
+
+    <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the P&S expected gpa</label>
+            <input type="name" class="form-control" name="pns" id="pns">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the DAA expected gpa</label>
+            <input type="name" class="form-control" name="daa" id="daa">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the JAVA expected gpa</label>
+            <input type="name" class="form-control" name="java" id="java">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the OS expected gpa</label>
+            <input type="name" class="form-control" name="os" id="os">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the DM expected gpa</label>
+            <input type="name" class="form-control" name="dm" id="dm">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the SE expected gpa</label>
+            <input type="name" class="form-control" name="se" id="se">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the AI expected gpa</label>
+            <input type="name" class="form-control" name="ai" id="ai">
+    </div>
+
+    <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the PBL expected gpa</label>
+            <input type="name" class="form-control" name="pbl" id="pbl">
+    </div>
+
+<div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the ESS expected gpa</label>
+            <input type="name" class="form-control" name="ess" id="ess">
+    </div>
+
+<button type="submit" class="btn btn-dark mt-2">Get CGPA</button>
+    </form>
+
+      </div>
+  </div>
+
+</div>
+
+
+<div class="container  my-4">
+  <p>
+
+      <button class="btn btn-dark col-12" type="button" data-bs-toggle="collapse" data-bs-target="#ec20" aria-expanded="false" aria-controls="ec20">
+          ECE Y20
+        </button>
+
+
+  </p>
+
+  <div class="collapse gap-2 col-12 " id="ec20">
+      <div class="card card-body">
+
+
+
+          <form action='/outec20' method='post'>{% csrf_token %}
+
+
+
+    <div class="col-md-6">
+            <label for="curgpa" class="form-label">Enter the current gpa</label>
+            <input type="name" class="form-control" name="curgpa" id="curgpa">
+    </div>
+
+    <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the ECH expected gpa</label>
+            <input type="name" class="form-control" name="ech" id="ech">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the FC2 expected gpa</label>
+            <input type="name" class="form-control" name="fc2" id="fc2">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the FC3 expected gpa</label>
+            <input type="name" class="form-control" name="fc3" id="fc3">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the PE1 expected gpa</label>
+            <input type="name" class="form-control" name="pe1" id="pe1">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the PE2 expected gpa</label>
+            <input type="name" class="form-control" name="pe2" id="pe2">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the CCS expected gpa</label>
+            <input type="name" class="form-control" name="ccs" id="ccs">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the TP expected gpa</label>
+            <input type="name" class="form-control" name="tp" id="tp">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the TI expected gpa</label>
+            <input type="name" class="form-control" name="ti" id="ti">
+    </div>
+
+    <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the MCP expected gpa</label>
+            <input type="name" class="form-control" name="mcp" id="mcp">
+    </div>
+
+
+<button type="submit" class="btn btn-dark mt-2">Get CGPA</button>
+    </form>
+
+
+      </div>
+  </div>
+
+</div>
+
+
+<div class="container  my-4">
+  <p>
+
+      <button class="btn btn-dark col-12" type="button" data-bs-toggle="collapse" data-bs-target="#cseh" aria-expanded="false" aria-controls="cseh">
+        CSE Y20 (HON)
+        </button>
+
+  </p>
+
+  <div class="collapse gap-2 col-12 " id="cseh">
+      <div class="card card-body">
+          <div class="container py-4" >
+
+  <form action='/out' method='POST'>{% csrf_token %}
+
+
+    <div class="col-md-6">
+            <label for="curgpa" class="form-label">Enter the current gpa</label>
+            <input type="name" class="form-control" name="curgpa" id="curgpa">
+    </div>
+
+    <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the TS expected gpa</label>
+            <input type="name" class="form-control" name="ts" id="ts">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the ATFL expected gpa</label>
+            <input type="name" class="form-control" name="atfl" id="atfl">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the EP expected gpa</label>
+            <input type="name" class="form-control" name="ep" id="ep">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the PE1 expected gpa</label>
+            <input type="name" class="form-control" name="pe1" id="pe1">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the PE2 expected gpa</label>
+            <input type="name" class="form-control" name="pe2" id="pe2">
+    </div>
+
+
+
+<button type="submit" class="btn btn-dark mt-2">Get CGPA</button>
+    </form>
+</div>
+      </div>
+  </div>
+
+</div>
+
+
+<div class="container  my-4">
+  <p>
+
+      <button class="btn btn-dark col-12" type="button" data-bs-toggle="collapse" data-bs-target="#cser" aria-expanded="false" aria-controls="cser">
+        CSE Y20 (REG)
+        </button>
+
+  </p>
+
+  <div class="collapse gap-2 col-12 " id="cser">
+      <div class="card card-body">
+          <div class="container py-4" >
+
+  <form action='/outcsr' method='POST'>{% csrf_token %}
+
+
+    <div class="col-md-6">
+            <label for="curgpa" class="form-label">Enter the current gpa</label>
+            <input type="name" class="form-control" name="curgpa" id="curgpa">
+    </div>
+
+    <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the TS expected gpa</label>
+            <input type="name" class="form-control" name="ts" id="ts">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the ATFL expected gpa</label>
+            <input type="name" class="form-control" name="atfl" id="atfl">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the EP expected gpa</label>
+            <input type="name" class="form-control" name="ep" id="ep">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the PE1 expected gpa</label>
+            <input type="name" class="form-control" name="pe1" id="pe1">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the PE2 expected gpa</label>
+            <input type="name" class="form-control" name="pe2" id="pe2">
+    </div>
+
+
+
+<button type="submit" class="btn btn-dark mt-2">Get CGPA</button>
+    </form>
+</div>
+      </div>
+  </div>
+
+</div>
+
+
+<div class="container  my-4">
+  <p>
+
+      <button class="btn btn-dark col-12" type="button" data-bs-toggle="collapse" data-bs-target="#ecer21" aria-expanded="false" aria-controls="ecer21">
+          ECE REG Y21
+        </button>
+
+
+  </p>
+
+  <div class="collapse gap-2 col-12 " id="ecer21">
+      <div class="card card-body">
+
+
+
+          <form action='/outecer21' method='post'>{% csrf_token %}
+
+
+
+    <div class="col-md-6">
+            <label for="curgpa" class="form-label">Enter the current gpa</label>
+            <input type="name" class="form-control" name="curgpa" id="curgpa">
+    </div>
+
+    <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the EDC expected gpa</label>
+            <input type="name" class="form-control" name="edc" id="edc">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the CSSD expected gpa</label>
+            <input type="name" class="form-control" name="cssd" id="cssd">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the ESD expected gpa</label>
+            <input type="name" class="form-control" name="esd" id="esd">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the AI ANN expected gpa</label>
+            <input type="name" class="form-control" name="ann" id="ann">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the PBL expected gpa</label>
+            <input type="name" class="form-control" name="pbl" id="pbl">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the ESE expected gpa</label>
+            <input type="name" class="form-control" name="ese" id="ese">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the SI expected gpa</label>
+            <input type="name" class="form-control" name="si" id="si">
+    </div>
+
+
+<button type="submit" class="btn btn-dark mt-2">Get CGPA</button>
+    </form>
+
+
+      </div>
+  </div>
+
+</div>
+
+
+ <div class="container  my-4">
+  <p>
+
+      <button class="btn btn-dark col-12" type="button" data-bs-toggle="collapse" data-bs-target="#ech21" aria-expanded="false" aria-controls="ech21">
+          ECE HON Y21
+        </button>
+
+
+  </p>
+
+  <div class="collapse gap-2 col-12 " id="ech21">
+      <div class="card card-body">
+
+
+
+          <form action='/outech21' method='post'>{% csrf_token %}
+
+
+
+    <div class="col-md-6">
+            <label for="curgpa" class="form-label">Enter the current gpa</label>
+            <input type="name" class="form-control" name="curgpa" id="curgpa">
+    </div>
+
+    <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the EDC expected gpa</label>
+            <input type="name" class="form-control" name="edc" id="edc">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the CSSD expected gpa</label>
+            <input type="name" class="form-control" name="cssd" id="cssd">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the ESD expected gpa</label>
+            <input type="name" class="form-control" name="esd" id="esd">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the AI ANN expected gpa</label>
+            <input type="name" class="form-control" name="ann" id="ann">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the PBL expected gpa</label>
+            <input type="name" class="form-control" name="pbl" id="pbl">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the ESE expected gpa</label>
+            <input type="name" class="form-control" name="ese" id="ese">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the SI expected gpa</label>
+            <input type="name" class="form-control" name="si" id="si">
+    </div>
+
+
+<button type="submit" class="btn btn-dark mt-2">Get CGPA</button>
+    </form>
+
+
+      </div>
+  </div>
+
+</div>
+
+
+<div class="container  my-4">
+  <p>
+
+      <button class="btn btn-dark col-12" type="button" data-bs-toggle="collapse" data-bs-target="#csh21" aria-expanded="false" aria-controls="csh21">
+          CSE HON (Y21)
+        </button>
+
+
+  </p>
+
+  <div class="collapse gap-2 col-12 " id="csh21">
+      <div class="card card-body">
+
+
+
+          <form action='/outcsh21' method='post'>{% csrf_token %}
+
+
+
+    <div class="col-md-6">
+            <label for="curgpa" class="form-label">Enter the current gpa</label>
+            <input type="name" class="form-control" name="curgpa" id="curgpa">
+    </div>
+
+    <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the OS expected gpa</label>
+            <input type="name" class="form-control" name="os" id="os">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the TS expected gpa</label>
+            <input type="name" class="form-control" name="ts" id="ts">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the SE expected gpa</label>
+            <input type="name" class="form-control" name="se" id="se">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the DBMS expected gpa</label>
+            <input type="name" class="form-control" name="dbms" id="dbms">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the AOOP expected gpa</label>
+            <input type="name" class="form-control" name="aoop" id="aoop">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the PSQT expected gpa</label>
+            <input type="name" class="form-control" name="psqt" id="psqt">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the ESC expected gpa</label>
+            <input type="name" class="form-control" name="esc" id="esc">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the EPICS expected gpa</label>
+            <input type="name" class="form-control" name="si" id="si">
+    </div>
+
+
+
+<button type="submit" class="btn btn-dark mt-2">Get CGPA</button>
+    </form>
+
+
+      </div>
+  </div>
+
+</div>
+
+
+<div class="container  my-4">
+  <p>
+
+      <button class="btn btn-dark col-12" type="button" data-bs-toggle="collapse" data-bs-target="#csr21" aria-expanded="false" aria-controls="csr21">
+          CSE REG (Y21)
+        </button>
+
+
+  </p>
+
+  <div class="collapse gap-2 col-12 " id="csr21">
+      <div class="card card-body">
+
+
+
+          <form action='/outcsr21' method='post'>{% csrf_token %}
+
+
+
+    <div class="col-md-6">
+            <label for="curgpa" class="form-label">Enter the current gpa</label>
+            <input type="name" class="form-control" name="curgpa" id="curgpa">
+    </div>
+
+    <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the OS expected gpa</label>
+            <input type="name" class="form-control" name="os" id="os">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the TS expected gpa</label>
+            <input type="name" class="form-control" name="ts" id="ts">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the SE expected gpa</label>
+            <input type="name" class="form-control" name="se" id="se">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the DBMS expected gpa</label>
+            <input type="name" class="form-control" name="dbms" id="dbms">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the AOOP expected gpa</label>
+            <input type="name" class="form-control" name="aoop" id="aoop">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the PSQT expected gpa</label>
+            <input type="name" class="form-control" name="psqt" id="psqt">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the ESC expected gpa</label>
+            <input type="name" class="form-control" name="esc" id="esc">
+    </div>
+
+
+    <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the EPICS expected gpa</label>
+            <input type="name" class="form-control" name="si" id="si">
+    </div>
+
+
+<button type="submit" class="btn btn-dark mt-2">Get CGPA</button>
+    </form>
+
+
+      </div>
+  </div>
+
+</div>
+
+
+
+<div class="container  my-4">
+  <p>
+
+      <button class="btn btn-dark col-12" type="button" data-bs-toggle="collapse" data-bs-target="#fed" aria-expanded="false" aria-controls="fed">
+          FED(Y22)
+        </button>
+
+
+  </p>
+
+  <div class="collapse gap-2 col-12 " id="fed">
+      <div class="card card-body">
+
+
+
+          <form action='/outfed' method='post'>{% csrf_token %}
+
+
+
+    <div class="col-md-6">
+            <label for="curgpa" class="form-label">Enter the CTSD expected gpa</label>
+            <input type="name" class="form-control" name="ctsd" id="ctsd">
+    </div>
+
+    <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the DTW expected gpa</label>
+            <input type="name" class="form-control" name="dtw" id="dtw">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the DLP expected gpa</label>
+            <input type="name" class="form-control" name="dlp" id="dlp">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the MFC expected gpa</label>
+            <input type="name" class="form-control" name="mfc" id="mfc">
+    </div>
+
+      <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Enter the IPE expected gpa</label>
+            <input type="name" class="form-control" name="ipe" id="ipe">
+    </div>
+
+
+
+
+<button type="submit" class="btn btn-dark mt-2">Get CGPA</button>
+    </form>
+
+
+      </div>
+  </div>
+
+</div>
+
+
+{% endblock body %}
+
+
